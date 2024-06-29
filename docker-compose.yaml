@@ -1,0 +1,17 @@
+#/opt/homebrew/Cellar/mysql-client/8.0.33/bin/mysql -h localhost -P 3306 --protocol=tcp -u root -p
+version: '3.1'
+services:
+  bd:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'lrpd'
+      MYSQL_USER: 'mssusr'
+      MYSQL_PASSWORD: 'toor'
+      MYSQL_ROOT_PASSWORD: 'root'
+      MYSQL_HOST: 'localhost'
+      TZ: "America/Sao_Paulo"
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'

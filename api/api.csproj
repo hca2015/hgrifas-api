@@ -1,0 +1,84 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>api_lrpd</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.7">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.7" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.7" />
+    <PackageReference Include="Mapster" Version="7.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Microsoft.EntityFrameworkCore.InMemory" />
+    <None Remove="Models\" />
+    <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+    <None Remove="MySql.EntityFrameworkCore" />
+    <None Remove="Pomelo.EntityFrameworkCore.MySql" />
+    <None Remove="Services\" />
+    <None Remove="Util\" />
+    <None Remove="Util\Framework\" />
+    <None Remove="Util\Framework\Attribute\" />
+    <None Remove="Util\Framework\Entidade\" />
+    <None Remove="Util\Framework\Repository\" />
+    <None Remove="Util\Framework\Controller\" />
+    <None Remove="Util\Framework\Middlewares\" />
+    <None Remove="Serilog.AspNetCore" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Microsoft.AspNetCore.Mvc.NewtonsoftJson" />
+    <None Remove="EntityFrameworkCore.EncryptColumn" />
+    <None Remove="Util\Mapper\" />
+    <None Remove="Models\Mensagem\" />
+    <None Remove="Models\DTO\" />
+    <None Remove="Models\DTO\Auth\" />
+    <None Remove="Models\DTO\Menu\" />
+    <None Remove="Models\Entity\" />
+    <None Remove="Models\Entity\Endereco\" />
+    <None Remove="Models\Entity\Menu\" />
+    <None Remove="Models\Entity\Usuario\" />
+    <None Remove="Models\Entity\Auth\" />
+    <None Remove="Models\DTO\Usuario\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Services\" />
+    <Folder Include="Util\" />
+    <Folder Include="Util\Framework\" />
+    <Folder Include="Util\Framework\Attribute\" />
+    <Folder Include="Util\Framework\Entidade\" />
+    <Folder Include="Util\Framework\Repository\" />
+    <Folder Include="Util\Framework\Controller\" />
+    <Folder Include="Util\Framework\Middlewares\" />
+    <Folder Include="Util\Mapper\" />
+    <Folder Include="Models\Mensagem\" />
+    <Folder Include="Models\DTO\" />
+    <Folder Include="Models\DTO\Auth\" />
+    <Folder Include="Models\DTO\Menu\" />
+    <Folder Include="Models\Entity\" />
+    <Folder Include="Models\Entity\Endereco\" />
+    <Folder Include="Models\Entity\Menu\" />
+    <Folder Include="Models\Entity\Usuario\" />
+    <Folder Include="Models\Entity\Auth\" />
+    <Folder Include="Models\DTO\Usuario\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig" />
+  </ItemGroup>
+</Project>
